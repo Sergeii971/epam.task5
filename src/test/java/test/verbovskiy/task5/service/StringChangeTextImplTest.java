@@ -1,15 +1,16 @@
 package test.verbovskiy.task5.service;
 
 import com.verbovskiy.task5.exception.TaskException;
+import com.verbovskiy.task5.service.ChangeText;
 import com.verbovskiy.task5.service.impl.StringChangeTextImpl;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
 public class StringChangeTextImplTest {
-    StringChangeTextImpl stringChangeText;
+    ChangeText stringChangeText;
 
     @BeforeClass
     public void setUp() {

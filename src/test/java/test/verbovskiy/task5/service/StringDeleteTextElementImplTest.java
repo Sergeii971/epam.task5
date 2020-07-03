@@ -1,15 +1,16 @@
 package test.verbovskiy.task5.service;
 
 import com.verbovskiy.task5.exception.TaskException;
+import com.verbovskiy.task5.service.DeleteTextElement;
 import com.verbovskiy.task5.service.impl.StringDeleteTextElementImpl;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
 public class StringDeleteTextElementImplTest {
-    StringDeleteTextElementImpl stringDeleteTextElement;
+    DeleteTextElement stringDeleteTextElement;
 
     @BeforeClass
     public void setUp() {

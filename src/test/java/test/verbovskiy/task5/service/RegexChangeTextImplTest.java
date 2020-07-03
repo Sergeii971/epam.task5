@@ -1,6 +1,7 @@
 package test.verbovskiy.task5.service;
 
 import com.verbovskiy.task5.exception.TaskException;
+import com.verbovskiy.task5.service.ChangeText;
 import com.verbovskiy.task5.service.impl.RegexChangeTextImpl;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -9,7 +10,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
 public class RegexChangeTextImplTest {
-    RegexChangeTextImpl regexChangeText;
+    ChangeText regexChangeText;
 
     @BeforeClass
     public void setUp() {
