@@ -2,7 +2,7 @@ package com.verbovskiy.task5.creator;
 
 import com.verbovskiy.task5.exception.TaskException;
 import com.verbovskiy.task5.reader.ConsoleReader;
-import com.verbovskiy.task5.reader.FileReader;
+import com.verbovskiy.task5.reader.DataFileReader;
 
 public class TextCreator {
     public String readTextFromConsole() {
@@ -13,8 +13,8 @@ public class TextCreator {
     }
 
     public String readTextFromFile(String fileName) throws TaskException {
-        FileReader fileReader = new FileReader();
-        String text = fileReader.readText(fileName);
+        DataFileReader dataFileReader = new DataFileReader();
+        String text = dataFileReader.readText(fileName);
 
         return  text;
     }

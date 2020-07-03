@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class FileReader {
+public class DataFileReader {
     public String readText(String fileName) throws TaskException {
         Path path = Paths.get(fileName);
         if (Files.notExists(path)) {
